@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/linearvertical"
+    android:background="#606060">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/txt_100dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/txt_100dp"
+            android:layout_height="@dimen/txt_100dp"
+            android:id="@+id/img"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/mark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/txt_40dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMART TRACKER FOR SMART PEOPLE"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold|normal"
+            android:textSize="15dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/t1"
+            style="@style/editext_graybg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/txt_68dp"
+            android:drawableLeft="@drawable/marker"
+            android:hint= "Latitude" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/t2"
+            style="@style/editext_graybg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/txt_68dp"
+            android:layout_marginBottom="@dimen/pad_20dp"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:drawableLeft="@drawable/marker"
+            android:hint="Longitude">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
